@@ -10,6 +10,22 @@
     <title>Block Everything</title>
 </head>
 <body>
-    <button class="important-button">start blocking.</button>
-</body>
+    <button id="toggleBtn" class="important-button">start blocking.</button>
+
+    <script>
+      const btn = document.getElementById("toggleBtn");
+
+      let isBlocking = false;
+
+      btn.addEventListener("click", () => {
+        isBlocking = !isBlocking;
+
+        if (isBlocking) {
+          btn.textContent = "stop blocking.";
+        } else {
+          btn.textContent = "start blocking.";
+        }
+      });
+    </script>
+  </body>
 </html>
