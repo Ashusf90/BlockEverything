@@ -1,0 +1,64 @@
+/*------------------------------------*\ 
+    #CONTENTS
+/*------------------------------------*/ 
+/**
+
+*SETTINGS
+**root . . . . . . . . . . Main settings
+
+*BODY
+**body . . . . . . . . . . Main popup box
+
+*BUTTON
+**important-button . . . . Big buttons that take up large sections of the popup
+
+**/
+
+/*------------------------------------*\ 
+    #SETTINGS
+/*------------------------------------*/
+:root{
+    --background-color: #02111b;
+
+    --button-color-main: #2363ad;
+    --button-color-text: #051f42;
+
+    --main-font: "Roboto";
+    --main-text-weight: 100;
+    --main-text-size: 30px;
+}
+
+/*------------------------------------*\ 
+    #BODY
+/*------------------------------------*/ 
+body{
+    display: flex;
+    background-color: var(--background-color);
+}
+
+/*------------------------------------*\ 
+    #BUTTON
+/*------------------------------------*/ 
+@property --button-size{
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 100px;
+}
+
+@property --button-size-ratio{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 2;
+}
+
+.important-button {
+    background-color: var(--button-color-main);
+    color: var(--button-color-text);
+
+    width:  calc(var(--button-size) * var(--button-size-ratio));
+    height: var(--button-size);
+
+    font-family:    var(--main-font);
+    font-weight:    var(--main-text-weight);
+    font-size:      var(--main-text-size);
+}

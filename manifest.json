@@ -1,0 +1,10 @@
+{
+  "name": "Block Everything",
+  "description": "A simple chrome extension that makes social media boring",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./popup/index.html",
+    "default_icon": "./assets/visuals/icons/main-logo--bigger.png"
+  }
+}
