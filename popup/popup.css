@@ -12,6 +12,10 @@
 *BUTTON
 **important-button . . . . Big buttons that take up large sections of the popup
 
+*TOGGLE
+**toggle-btn . . . . . . . Main button used to toggle on or off the extension
+**toggle-image . . . . . . The child of toggle btn - image 
+
 **/
 
 /*------------------------------------*\ 
@@ -61,4 +65,18 @@ body{
     font-family:    var(--main-font);
     font-weight:    var(--main-text-weight);
     font-size:      var(--main-text-size);
+}
+
+/*------------------------------------*\ 
+    #TOGGLE
+/*------------------------------------*/ 
+.toggle--btn{
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.toggle--image{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
