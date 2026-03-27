@@ -22,7 +22,7 @@
     #SETTINGS
 /*------------------------------------*/
 :root{
-    --background-color: #02111b;
+    --background-color: #65bbc7;
 
     --button-color-main: #2363ad;
     --button-color-text: #051f42;
@@ -72,6 +72,7 @@ body{
 /*------------------------------------*/ 
 .toggle--btn{
     border-radius: 10px;
+    border-color: transparent;
     background-color: transparent;
 }
 
